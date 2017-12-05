@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Thank you for sharing!</h1>
+    <h1>Your submitted Info</h1>
+    <h2>Name: {{session['name']}}</h2>
+    <h2>Dojo Location: {{session['location']}}</h2>
+    <h2>Favorite Language: {{session['language']}}</h2>
+    {% if comment %}
+        <h2>Comment: {{comment}}</h2>
+    {% endif %}
+    <br><br>
+    <button> <a href="/">Go Back</a> </button>
+</body>
+</html>
